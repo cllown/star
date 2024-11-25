@@ -1,0 +1,12 @@
+<div *ngIf="movie$ | async as movie; else loading">
+  <h1>{{ movie.title }}</h1>
+  <p>Episode: {{ movie.episode_id }}</p>
+  <p>Director: {{ movie.director }}</p>
+  <p>Producer: {{ movie.producer }}</p>
+  <p>Opening Crawl:</p>
+  <pre>{{ movie.opening_crawl }}</pre>
+  <p>Release Date: {{ movie.release_date | date }}</p>
+</div>
+<ng-template #loading>
+  <p>Loading movie details...</p>
+</ng-template>

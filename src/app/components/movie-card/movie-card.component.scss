@@ -1,0 +1,47 @@
+.movie-details {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  .movie-director,
+  .movie-producer,
+  .movie-opening-crawl,
+  .movie-release-date {
+    font-size: 16px;
+    color: #111;
+    margin: 8px 0;
+  }
+  .movie-title{
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 20px;
+  }
+  .movie-title-link{
+    color: inherit;
+    text-decoration: none;
+  }
+}
+:host {
+
+  ::ng-deep p-card {
+     .p-card {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+
+    }
+      .p-card-body {
+          display: flex;
+          flex-direction: column;
+          flex-grow: 1;
+          padding: 0.625rem 0.9375rem 1.25rem 0.9375rem;
+
+      }
+      .p-card-content {
+          flex-grow: 1;
+          padding: 0;
+          background-color: #fff;
+          border-radius: 10px;
+
+      }
+  }
+}

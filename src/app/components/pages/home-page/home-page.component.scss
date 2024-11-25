@@ -1,0 +1,8 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,regular,500&display=swap");
+
+.page-wrapper{
+  font-family: Roboto;
+  &__title{
+    color: #fff;
+  }
+}

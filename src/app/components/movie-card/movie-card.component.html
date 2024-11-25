@@ -1,0 +1,11 @@
+<p-card *ngIf="movie" >
+  <div class="movie-details">
+    <a [routerLink]="['/movie', movie.episode_id]" class="movie-title-link">
+      <p class="movie-title">{{ movie.title }}</p>
+    </a>
+    <p class="movie-episode-id">Episode: {{ movie.episode_id }}</p>
+    <p class="movie-director">Director: {{ movie.director }}</p>
+    <p class="movie-producer">Producer: {{ movie.producer }}</p>
+    <p class="movie-release-date">{{ movie.release_date | date }}</p>
+  </div>
+</p-card>
